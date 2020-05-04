@@ -1,0 +1,16 @@
+ .middles{
+    float:left;
+    width:100%;
+    text-align: center;
+    padding-top: 15%;
+ }
+ .buttons{
+    height: 40px;
+    background-color: burlywood;
+    width: 8%;
+    display:inline-block;
+ }
+body{
+    background-repeat: no-repeat;   
+    background-size: 100%;
+}
