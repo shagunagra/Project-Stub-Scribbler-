@@ -1,0 +1,47 @@
+.button1{
+    background-color: blue;
+    color: white;
+    display:inline-block;
+    margin-right: 10px;
+    position: absolute;
+    top: 8px;
+    right: 90px;
+    height: 5%;
+    width: 6%;
+ }
+ #button2{
+     background-color: blue;
+     color: white;
+     display:inline-block;
+     position: absolute;
+     top: 8px;
+     right: 1px;
+     height: 5%;
+     width: 6%;
+  }
+  #logo{
+    font-family: 'Montez', cursive;
+    color: blue;
+  }
+  #logo2{
+      font-family: 'Ubuntu Mono';
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover, 
+  .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
