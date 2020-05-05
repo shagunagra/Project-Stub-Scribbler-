@@ -14,13 +14,13 @@
         <header id="heading">
             <h1 id="logo">ScriBBler</h1>
             <p id="logo2">Explore, Imagine, Create</p>
-            <button onclick="openup()" class="button1">Sign Up</button>
+            <button onclick="document.getElementById('id01').style.display='block'" class="button1">Sign Up</button>
 
             <div id="id01" class="modal">
                 
                 <form class="modal-content">
                     <div>
-                        <span onclick="cross()" class="close">&times;</span>
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
                         <p class="getstart">Get Started</p>
                         <hr>
                     </div>
@@ -52,16 +52,15 @@
             </div>
 
 
-            <button onclick="openup()" id="button2">Sign In</button>
+            <button onclick="document.getElementById('id02').style.display='block'" id="button2">Sign In</button>
 
-            <div id="id02" >
-
-                <form class="othermodel_container">
+            <div id="id02" class="modal">
+                <form class="modal-content">
                     <div>
-                        <span onclick="cross()" class="close1">&times;</span>
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
                         <p class="getstart">Welcome Back</p>
                         <hr>
-                    </div> 
+                    </div>
                     <div class="form_container">
                         <label>Username</label>
                         <br>
@@ -75,13 +74,37 @@
                     </div>
                     <div>
                         <button class="submit">Sign In</button>
-                        <p>Not a member? <span><a href="./.button1">Sign Up</a></span></p>
+                        <p class="member">Not a member?<span onclick="document.getElementById('id02').style.display='none',document.getElementById('id01').style.display='block'"><span class="link"> Sign Up</span></span></p>
                     </div>
                 </form>
-
+            </div>
         </header>
         <div class="middles">
-            <button class="buttons">All Posts</button>
+
+            <button onclick="document.getElementById('id03').style.display='block'" class="buttons">All Posts</button>
+            <div id="id03" class="modal">
+                <form class="modal-content1">
+                    <div>
+                        <span onclick="document.getElementById('id03').style.display='none'" class="closees">&times;</span>
+                        <p class="get">Pen Your Post</p>
+                        <hr>
+                    </div>
+                    <div class="form_container">
+                        <label class="la1">Title</label>
+                        <br>
+                        <input class="post" type="text" placeholder="  Enter title of your post">
+                        <br>
+
+                        <label id="la2">Contents</label>
+                        <br>
+                        <input class="post1" type="text" placeholder="  Enter the contents of your post">
+                        <br>
+                    </div>
+                    <div>
+                        <button class="but">Create</button>
+                    </div>
+                </form>
+            </div>
             <button class="buttons">Create Post</button>
         </div>
         <script src="./Scripts/common.js" async defer></script>
