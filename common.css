@@ -116,3 +116,12 @@ color:grey;
 font-weight: bolder;
 cursor: pointer;
 }
+.member{
+  font-weight: bold;
+  margin-left: 22%;
+  padding: 5%;
+}
+.link{
+  color: blue;
+  cursor: pointer;
+}
