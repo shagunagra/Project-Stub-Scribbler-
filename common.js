@@ -1,20 +1,19 @@
-var modalA = document.getElementById('id01');
+function cross(){
+    document.getElementById('id01').style.display='none';
+}
 
-var modal = document.getElementById('id02');
 
-var modalB = document.getElementById('id03');
+function openup(){
+    document.getElementById('id01').style.display='block';
+}
+
+
+var modal = document.getElementById('id01');
 
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-    } 
-  if(event.target == modalA) {
-        modalA.style.display = "none";      
-     }
-  if(event.target == modalB) {
-        modalA.style.display = "none";      
-     }
+    }
 }
-
 
 
