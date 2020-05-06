@@ -1,0 +1,96 @@
+body{
+    background-color: #ffeedd;
+}
+.button1{
+    background-color: blue;
+    color: white;
+    display:inline-block;
+    margin-right: 10px;
+    position: absolute;
+    top: 8px;
+    right: 90px;
+    height: 5%;
+    width: 6%;
+ }
+ #button2{
+     background-color: blue;
+     color: white;
+     display:inline-block;
+     position: absolute;
+     top: 8px;
+     right: 1px;
+     height: 5%;
+     width: 6%;
+  }
+  #logo{
+    font-family: 'Montez', cursive;
+    color: blue;
+  }
+  #logo2{
+      font-family: 'Ubuntu Mono';
+  }
+ .container{
+    box-shadow: 0 4px 8px 0 plum;
+    transition: 0.3s;
+    display: flex; 
+    margin: 1%;
+    margin-left: 6%;
+    border-radius: 20px;
+    width: 40%;
+    height: 150%;
+ }
+ .name{
+     background-color: white;
+     border-bottom-left-radius: 20px;
+     border-top-left-radius: 20px;
+     text-align: center;
+     padding: 1%;
+ }
+ .post_container{
+     background-color: lightgrey;
+     border-bottom-right-radius: 20px;
+     border-top-right-radius: 20px;
+ }
+ .write{
+     color: grey;
+     margin-left: 5%;
+ }
+ .name_color{
+     color: grey;
+     font-size: larger;
+     margin-top: 70%;
+ }
+ .contents{
+     margin-right: 5%;
+     margin-left: 5%;
+     margin-bottom: 5%;
+ }
+ .container:hover{
+    box-shadow: 0 0 50px plum;
+ }
+ .main_div{
+    display:flex;
+    flex-direction: row;
+    flex-flow: wrap;
+ }
+ .container1{
+    box-shadow: 0 4px 8px 0 plum;
+    transition: 0.3s;
+    display: flex; 
+    margin: 1%;
+    margin-left: 30%;
+    border-radius: 20px;
+    width: 40%;
+    height: 150%;
+ }
+ .container1:hover{
+    box-shadow: 0 0 50px plum;
+ }
+.trash{
+    float: right;
+    position: relative;
+    bottom: 45px;
+    right: 4%;
+    color: grey;
+    cursor: pointer;
+  }
