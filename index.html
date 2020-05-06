@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Home Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/index.css">
@@ -25,22 +25,22 @@
                         <hr>
                     </div>
                     <div class="form_container">
-                        <label>Name</label>
+                        <label class="l">Name</label>
                         <br>
                         <input type="text" placeholder="  Enter your name" required>
                         <br>
 
-                        <label>Username</label>
+                        <label class="l">Username</label>
                         <br>
                         <input type="text" placeholder="  Enter your username" required>
                         <br>
 
-                        <label>Password</label>
+                        <label class="l">Password</label>
                         <br>
                         <input type="password" placeholder="  Enter your password" required>
                         <br>
 
-                        <label>Confirm Password</label>
+                        <label class="l">Confirm Password</label>
                         <br>
                         <input type="password" placeholder="  Re-enter your password" required>
                         <br>
@@ -58,16 +58,16 @@
                 <form class="modal-content">
                     <div>
                         <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
-                        <p class="getstart">Welcome Back</p>
+                        <p class="getstart">Welcome Back!</p>
                         <hr>
                     </div>
                     <div class="form_container">
-                        <label>Username</label>
+                        <label class="l">Username</label>
                         <br>
                         <input type="text" placeholder="  Enter your username" required>
                         <br>
 
-                        <label>Password</label>
+                        <label class="l">Password</label>
                         <br>
                         <input type="password" placeholder="  Enter your password" required>
                         <br>
@@ -82,6 +82,7 @@
         <div class="middles">
 
             <button onclick="document.getElementById('id03').style.display='block'" class="buttons">All Posts</button>
+
             <div id="id03" class="modal">
                 <form class="modal-content1">
                     <div>
@@ -90,14 +91,14 @@
                         <hr>
                     </div>
                     <div class="form_container">
-                        <label class="la1">Title</label>
+                        <label class="la1" style="left: 1000%;">Title</label>
                         <br>
                         <input class="post" type="text" placeholder="  Enter title of your post">
                         <br>
 
-                        <label id="la2">Contents</label>
+                        <label class="la1">Contents</label>
                         <br>
-                        <input class="post1" type="text" placeholder="  Enter the contents of your post">
+                        <textarea class="textbox1"name="mytextarea"placeholder=" Enter the contents of your post"></textarea>
                         <br>
                     </div>
                     <div>
