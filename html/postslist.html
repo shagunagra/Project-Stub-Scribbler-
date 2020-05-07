@@ -15,8 +15,71 @@
    <header>
     <h1 id="logo">ScriBBler</h1>
     <p id="logo2">Explore, Imagine, Create</p>
-    <button class="button1">Sign Up</button>
-    <button id="button2">Sign In</button>
+    <button onclick="document.getElementById('id01').style.display='block'"  class="button1">Sign Up</button>
+
+    <div id="id01" class="modal">
+                
+        <form class="modal-content">
+            <div>
+                <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+                <p class="getstart">Get Started</p>
+                <hr>
+            </div>
+            <div class="form_container">
+                <label class="l">Name</label>
+                <br>
+                <input type="text" placeholder="  Enter your name" required>
+                <br>
+
+                <label class="l">Username</label>
+                <br>
+                <input type="text" placeholder="  Enter your username" required>
+                <br>
+
+                <label class="l">Password</label>
+                <br>
+                <input type="password" placeholder="  Enter your password" required>
+                <br>
+
+                <label class="l">Confirm Password</label>
+                <br>
+                <input type="password" placeholder="  Re-enter your password" required>
+                <br>
+            </div>
+            <div>
+                <button class="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+     
+    <button onclick="document.getElementById('id02').style.display='block'" id="button2">Sign In</button>
+
+    <div id="id02" class="modal">
+        <form class="modal-content">
+            <div>
+                <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+                <p class="getstart">Welcome Back!</p>
+                <hr>
+            </div>
+            <div class="form_container">
+                <label class="l">Username</label>
+                <br>
+                <input type="text" placeholder="  Enter your username" required>
+                <br>
+
+                <label class="l">Password</label>
+                <br>
+                <input type="password" placeholder="  Enter your password" required>
+                <br>
+            </div>
+            <div>
+                <button class="submit">Sign In</button>
+                <p class="member">Not a member?<span onclick="document.getElementById('id02').style.display='none',document.getElementById('id01').style.display='block'"><span class="link"> Sign Up</span></span></p>
+            </div>
+        </form>
+    </div>
+
+    
    </header>
     <div class="main_div">
 
@@ -29,18 +92,20 @@
             <div class="post_container">
                 <div class="write">
                     <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-                    <span class="trash">
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
-                        <i class="fa fa-trash"  data-target="#del"></i>
-                        <div id="del">
+                    <span onclick="openbutton()" class="trash" id="btns">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </span>
+                 <!--   <div id="get_modal" class="mod">
+                        <div class="modal_content">
                             <button>Yes</button>
                             <button>No</button>
                         </div>
-                    </span>
+                    </div>  -->
                 </div>
                 <p class="contents">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
-                <span>
+                <span class="dots">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <a href="./post.html" target="_blank"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
                 </span>
             </div>
         </div>
@@ -61,8 +126,9 @@
                     </span>
                 </div>
                 <p class="contents">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
-                <span>
+                <span class="dots">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <a href="./post.html" target="_blank"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
                 </span>
             </div>
         </div>
@@ -83,8 +149,9 @@
                     </span>
                 </div>
                 <p class="contents">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
-                <span>
+                <span class="dots">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <a href="./post.html" target="_blank"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
                 </span>
             </div>
         </div>
@@ -106,8 +173,9 @@
                 </div>
                 <p class="contents">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
                     leads to confusion when discussing the code.  </p>
-                <span>
+                <span class="dots">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <a href="./post.html" target="_blank"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
                 </span>
             </div>
         </div>
@@ -129,8 +197,9 @@
                 </div>
                 <p class="contents">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
                     named xyz.</p>
-                <span>
+                <span class="dots">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <a href="./post.html" target="_blank"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
                 </span>
             </div>
         </div>
@@ -140,6 +209,6 @@
 
     </div>
     <!-- list of all posts ends here -->
-    <script src="./Scripts/postslist.js" async defer></script>
+    <script src="../Scripts/postslist.js" async defer></script>
 </body>
 </html>
