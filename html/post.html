@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Post Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../Styles/post.css">
+        <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="logo">ScriBBler</h1>
+            <p id="logo2">Explore, Imagine, Create</p>
+            <button onclick="document.getElementById('id01').style.display='block'" class="button1">Sign Up</button>
+
+            <div id="id01" class="modal">
+                
+                <form class="modal-content">
+                    <div>
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+                        <p class="getstart">Get Started</p>
+                        <hr>
+                    </div>
+                    <div class="form_container">
+                        <label class="l">Name</label>
+                        <br>
+                        <input type="text" placeholder="  Enter your name" required>
+                        <br>
+
+                        <label class="l">Username</label>
+                        <br>
+                        <input type="text" placeholder="  Enter your username" required>
+                        <br>
+
+                        <label class="l">Password</label>
+                        <br>
+                        <input type="password" placeholder="  Enter your password" required>
+                        <br>
+
+                        <label class="l">Confirm Password</label>
+                        <br>
+                        <input type="password" placeholder="  Re-enter your password" required>
+                        <br>
+                    </div>
+                    <div>
+                        <button class="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <button onclick="document.getElementById('id02').style.display='block'" id="button2">Sign In</button>
+
+            <div id="id02" class="modal">
+                <form class="modal-content">
+                    <div>
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+                        <p class="getstart">Welcome Back!</p>
+                        <hr>
+                    </div>
+                    <div class="form_container">
+                        <label class="l">Username</label>
+                        <br>
+                        <input type="text" placeholder="  Enter your username" required>
+                        <br>
+
+                        <label class="l">Password</label>
+                        <br>
+                        <input type="password" placeholder="  Enter your password" required>
+                        <br>
+                    </div>
+                    <div>
+                        <button class="submit">Sign In</button>
+                        <p class="member">Not a member?<span onclick="document.getElementById('id02').style.display='none',document.getElementById('id01').style.display='block'"><span class="link"> Sign Up</span></span></p>
+                    </div>
+                </form>
+            </div>
+
+
+           </header>
+           <h1 class="title" id="get_pink">Everything you should know about 'module' & 'require' in Node.js</h1>
+           <p class="author">Srishti Gupta</p>
+           <button onclick="borders()"  class="buttons" id="edit_button">Edit <span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></button>
+           <button onclick="borders()" id="save_button" class="vis">Save <span><i class="fa fa-floppy-o" aria-hidden="true"></i></span></button>
+           <p class="para" id="all_data">Node js treats each JavaScript file as a separate module. For instance, if you have a file containing can say that you've created a module named xyz Let's take an example to understand this better. You have a file named circle js which consists of the logic for calculating the area & the
+
+            circumference of a circle of a given radius You can call circle js file a module named circle.
+            
+            You might be wondering why is there a need to have multiple modules? You could have just
+            
+            By modular, I mean to say that your code should be independent and should be loosely coupled.
+            
+            written all the code in a single module Well, it is very important to write modular code Imagine that there's a large application and you have all your code written in just one place, just one file Too messy, right? How does the code written inside a module run? Before executing the code written inside a module, Node takes the entire code and encloses it within a function wrapper The syntax of this function wrapper 1 private to the module, unless explicitly stated exported) otherwise The enter code written inside a module 1 This is the most significant advantage of having modules in Node js Even if you define a global variable in a module uung var, let or const keywords, the variables are scoped locally to the module rather than being scoped globally. This happens because cach module has a function wrapper of its own and the code Written inside one function is local to that function and cannot be accessed outside this function. Imagine that there are two modules A and B enclosed within the function wrapper corresponding to the module A Similar thing happens enclosed within different functions, these functions will not be able to access the code of each other The code written anside the module A with the code written inside the module B Because the code pertaining to both the modules s (Remember each function in JavaScript has its own local scope 7) This is the reason why
+            
+            in a module
+            
+            module A cannot access the code written inside module B and vice-versa. The five parameters- exports, require, module,filename,duname are available inside each module in Node Though these parameters are global to the code within a module yet they are local to the module (because of the function wrapper as explained above). These parameters provide valuable information related to a module Let's revisit the circle module, which you looked at earlier There are three constructs defined in this module calculate Area and another function named calculate Circumference An important point a constant variable PI, a function named to keep in mind is that all these constructs are private to the circle module by default It means that you cannot use these constructs in any other module unless explicitly specified. So, the question that anses now is how do you specity something in a module that can be used by some other module? This is u hen the module & require parameters of the function wrapper are helpful. Let's discuss these vo parameters in this article module The module parameter (rather a keyword in Node) tefers to the object representing the current module exports i a key of the module object, the corresponding value of which s an object. The default value of module exports object is empty object) You can check this by logging the value of module keyword inside any module Let's check what in the value of module parameters inside the circle module Notice that there is a console loginmodule) statement at the end of the code in the file given above When you see the output, it will log the module object, which basako named exports and the value corresponding to this key is Whatever is an empty object) Now, what does the module exports object do Well it is used for defining stuff that can be exported by a module exported from a module can, in turn, be made available to other modules Exporting something is quite easy. You just need to add it to the module exports object There are three ways to add something to the module exports object to be exported Let's discuss these
+            
+            methods one by one.</p>
+
+            <button onclick= "thu()" class="like" id="likes"><span class="thumb"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span> Like</button>
+            <p class="first" id="count">Be the first one to like this!</p>
+
+            <textarea class="comment" id="add">Leave a comment...</textarea>
+            <br>
+
+            <button onclick="adding()" class="com">Comment</button>
+
+            <p class="all_c">All Comments</p>
+
+            
+        <script src="../Scripts/post.js" async defer></script>
+    </body>
+</html>
