@@ -31,22 +31,23 @@ function thu(){
 
 
   function adding() {
-    var x = document.createElement("TEXTAREA");
-    var a = document.getElementById("add").value;
-    var t = document.createTextNode(a);
-    x.appendChild(t);
-    document.body.appendChild(x);
-    x.style.marginLeft = '2%';
-    x.style.width = '775px';
-    x.style.height = '80px';
-    x.style.borderTop = '30px solid lightgrey';
-    x.style.borderBottom = '30px solid lightgrey';
-    x.style.borderLeft = '15px solid lightgrey';
-    x.style.borderRight = '15px solid lightgrey';
-    x.style.bottom = '0';
-    x.style.float = 'left';
-  }
+    var comment= document.getElementById('c_content').value;
 
+    var node = document.createElement("div");
+    node.innerHTML ="<br>"
+    node.style.backgroundColor="#fff";
+    node.style.margin="10px 10px 10px 10px";
+    node.style.padding="0 20px 20px 10px";
+    var textnode = document.createTextNode(comment);
+    node.appendChild(textnode);
+    if (comment===""){
+        alert("Please add a comment......");
+    }
+    else{
+        var latestComment = document.getElementById("box");
+        latestComment.insertBefore(node, latestComment.childNodes[0]); 
+    }       
+}
 var modalA = document.getElementById('id01');
 
 var modal = document.getElementById('id02');
