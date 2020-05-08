@@ -104,12 +104,19 @@
             <button onclick= "thu()" class="like" id="likes"><span class="thumb"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span> Like</button>
             <p class="first" id="count">Be the first one to like this!</p>
 
-            <textarea class="comment" id="add">Leave a comment...</textarea>
-            <br>
-
-            <button onclick="adding()" class="com">Comment</button>
-
-            <p class="all_c">All Comments</p>
+            <div class="c_container">      
+                <form class="commentBody"> 
+                <label for="c_content"></label>
+                                <textarea placeholder="Leave a comment..." id="c_content" rows="5" cols="80" name="Content"></textarea> <br>
+                                <button type="button" class="newComment" onClick="adding()">Comment</button>
+                </form>
+                <p class="all_c">All Comments</p> 
+                <div class="all_comments" id= "box"> 
+                   <div class="contents">                                          
+                            </div>
+                        </div>
+                    </div>
+                    </div>
 
             
         <script src="../Scripts/post.js" async defer></script>
