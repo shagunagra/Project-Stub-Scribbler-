@@ -24,7 +24,7 @@
     color: blue;
   }
   #logo2{
-      font-family: 'Ubuntu Mono';
+      font-family: 'Ubuntu Mono', cursive;
       color: purple;
   }
   .title{
@@ -43,7 +43,7 @@
       border: 0;
       background-color: red;
       color: white;
-      bottom: 490px;
+      bottom: 455px;
       position: absolute;
       height: 35px;
       width: 6%;
@@ -55,7 +55,7 @@
      border: 0;
      background-color: red;
      color: white;
-     bottom: 490px;
+     bottom: 455px;
      position: absolute;
      height: 35px;
      width: 6%;
@@ -80,23 +80,6 @@
      font-family: 'Courier New', Courier, monospace;
      width: 800px;
      height: 90px;
- }
- .com{
-    border: 0;
-    background-color: red;
-    color: white;
-    height: 35px;
-    width: 6%;
-    margin-left: 2%;
-    margin-top: 1%;
-    box-shadow: 0 5px 20px -5px purple; 
- }
- .all_c{
-     margin-left: 2%;
-     margin-top: 2%;
-     font-weight: bolder;
-     font-size: larger;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
  .modal{
     display: none; 
@@ -197,3 +180,35 @@ cursor: pointer;
     color: blue;
     cursor: pointer;
   }
+  .commentBody{
+    display: inline-table;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    }
+  .newComment {
+    border: 0;
+    background-color: red;
+    color: white;
+    height: 35px;
+    width: 6%;
+    margin-left: 2%;
+    margin-top: 1%;
+    box-shadow: 0 5px 20px -5px purple; 
+  }
+  #c_content{
+      width:60%;
+  }
+  .all_c{
+    margin-left: 2%;
+    margin-top: 2%;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.all_comments {
+  background-color: #E2E4E6;  
+  padding: 10px 10px 10px 10px;
+  margin-left: 10px;
+  width: 60%;
+}
