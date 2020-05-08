@@ -1,6 +1,3 @@
-/*function openbutton() {
-  document.getElementById('get_modal').style.display='block';
-  }*/
 
 var modalA = document.getElementById('id01');
 
@@ -13,4 +10,18 @@ window.onclick = function(event) {
   if(event.target == modalA) {
         modalA.style.display = "none";      
      }
+}
+
+function onDeletePost(){
+  document.getElementById('deletePost').style.display='block';
+}
+
+
+function onCloseDeleteClicked() {
+  document.getElementById('deletePost').style.display='none';
+}
+
+function removeElement(elementId) {
+  var element = document.getElementsByClassName(elementId);
+  element.parentNode.removeChild(element);
 }
