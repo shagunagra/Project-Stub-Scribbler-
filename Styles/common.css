@@ -24,7 +24,7 @@
     color: blue;
   }
   #logo2{
-      font-family: 'Ubuntu Mono';
+      font-family: 'Ubuntu Mono' , cursive;
   }
   .modal{
     display: none; 
