@@ -20,6 +20,9 @@ function borders() {
   }
 }
 
+
+
+
 var p = document.getElementById("count");
 var b3 = document.getElementById("likes");
 var count = 0;
@@ -33,21 +36,25 @@ function thu(){
   function adding() {
     var comment= document.getElementById('c_content').value;
 
-    var node = document.createElement("div");
-    node.innerHTML ="<br>"
-    node.style.backgroundColor="#fff";
-    node.style.margin="10px 10px 10px 10px";
-    node.style.padding="0 20px 20px 10px";
+    var n = document.createElement("div");
+    n.innerHTML ="<br>"
+    n.style.backgroundColor="white";
+    n.style.margin="10px 10px 10px 10px";
+    n.style.padding="0 20px 20px 10px";
     var textnode = document.createTextNode(comment);
-    node.appendChild(textnode);
+    n.appendChild(textnode);
     if (comment===""){
-        alert("Please add a comment......");
+        alert("No comment added......");
     }
     else{
-        var latestComment = document.getElementById("box");
-        latestComment.insertBefore(node, latestComment.childNodes[0]); 
+        var a = document.getElementById("box");
+        a.insertBefore(n, a.childNodes[0]); 
     }       
 }
+
+
+
+
 var modalA = document.getElementById('id01');
 
 var modal = document.getElementById('id02');
