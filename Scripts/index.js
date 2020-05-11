@@ -1,2 +1,1 @@
-//add the javascript content
-//no javascript needed 
+//no javascript needed for the index.html page.
