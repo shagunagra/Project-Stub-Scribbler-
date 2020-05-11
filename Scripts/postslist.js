@@ -12,14 +12,21 @@ window.onclick = function(event) {
      }
 }
 
+
+
+
 function onDeletePost(){
   document.getElementById('deletePost').style.display='block';
 }
 
 
+
+
 function onCloseDeleteClicked() {
   document.getElementById('deletePost').style.display='none';
 }
+
+
 
 function removeElement(elementId) {
   var element = document.getElementsByClassName(elementId);
