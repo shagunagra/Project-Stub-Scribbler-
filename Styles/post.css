@@ -32,7 +32,7 @@
 }
  .author {
 	 font-family: cursive;
-	 font-size: 140%;
+	 font-size: 160%;
 	 margin-left: 2%;
 }
  .para {
@@ -43,25 +43,14 @@
 	 border: 0;
 	 background-color: red;
 	 color: white;
-	 bottom: 385px;
-	 position: absolute;
+	 margin: 10px 10px 10px 10px;
+	 float: right;
+	 cursor: pointer;
 	 height: 35px;
 	 width: 6%;
-	 margin-left: 90%;
 	 box-shadow: 0 5px 20px -5px purple;
 }
- .vis {
-	 visibility: hidden;
-	 border: 0;
-	 background-color: red;
-	 color: white;
-	 bottom: 385px;
-	 position: absolute;
-	 height: 35px;
-	 width: 6%;
-	 margin-left: 90%;
-	 box-shadow: 0 5px 20px -5px purple;
-}
+
  .like {
 	 border: 0;
 	 background-color: red;
