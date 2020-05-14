@@ -6,22 +6,17 @@ function borders() {
   if (myInput.style.border == "") {
     myInput.style.border = "3px solid pink";
     other.style.border = "3px solid pink";
-    b1.style.visibility = 'hidden';
-    b2.style.visibility = 'visible';
+    b1.innerHTML="Save <i class='fa fa-save'></i>";
     myInput.contentEditable= 'true';
     other.contentEditable= 'true';
   } else {
     myInput.style.border = "";
     other.style.border = "";
-    b1.style.visibility = 'visible';
-    b2.style.visibility = 'hidden';
+    b1.innerHTML="Edit <i class='fa fa-edit'></i>";
     myInput.contentEditable= 'false';
     other.contentEditable= 'false';
   }
 }
-
-
-
 
 var p = document.getElementById("count");
 var b3 = document.getElementById("likes");
@@ -51,10 +46,6 @@ function thu(){
         a.insertBefore(n, a.childNodes[0]); 
     }       
 }
-
-
-
-
 var modalA = document.getElementById('id01');
 
 var modal = document.getElementById('id02');
