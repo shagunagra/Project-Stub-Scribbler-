@@ -12,23 +12,36 @@ window.onclick = function(event) {
      }
 }
 
-
-
-
 function onDeletePost(){
   document.getElementById('deletePost').style.display='block';
 }
-
-
 
 
 function onCloseDeleteClicked() {
   document.getElementById('deletePost').style.display='none';
 }
 
+function removeElement(btnstate) {
+  var divs= document.getElementById('post1');
+  divs.parentNode.removeChild(divs);
+}
 
+function removeElement(btnstate) {
+  var divs= document.getElementById('post2');
+  divs.parentNode.removeChild(divs);
+}
 
-function removeElement(elementId) {
-  var element = document.getElementsByClassName(elementId);
-  element.parentNode.removeChild(element);
+function removeElement(btnstate) {
+  var divs= document.getElementById('post3');
+  divs.parentNode.removeChild(divs);
+}
+
+function removeElement(btnstate) {
+  var divs= document.getElementById('post4');
+  divs.parentNode.removeChild(divs);
+}
+
+function removeElement(btnstate) {
+  var divs= document.getElementById('post5');
+  divs.parentNode.removeChild(divs);
 }
