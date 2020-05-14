@@ -35,13 +35,10 @@ body{
     transition: 0.3s;
     display:  flex;
     margin: 1%;
-    margin-left: 6%;
+    margin-left: 2%;
     border-radius: 20px;
     width: 40%;
     height: 150%;
- }
- #post5{
-  margin-left: 30%;
  }
  .name{
      background-color: white;
@@ -73,9 +70,11 @@ body{
     box-shadow: 0 0 50px plum;
  }
  .main_div{
-    display:flex;
-    flex-direction: row;
-    flex-flow: wrap;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
  }
 .trash{
     background-color: lightgrey;
