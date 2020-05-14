@@ -157,7 +157,8 @@ input{
   color: white;
   width: 105px;
   height: 35px;
-  margin-left: 45%;
+  margin-right: 3%;
+  float: right;
 }
 label.l{
   margin-top: 3%;
