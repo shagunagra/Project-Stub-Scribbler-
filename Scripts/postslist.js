@@ -3,6 +3,8 @@ var modalA = document.getElementById('id01');
 
 var modal = document.getElementById('id02');
 
+var modalC = document.getElementById('deletePost');
+
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
@@ -10,6 +12,10 @@ window.onclick = function(event) {
   if(event.target == modalA) {
         modalA.style.display = "none";      
      }
+  if(event.target == modalC) {
+      modalC.style.display = "none";      
+     }
+
 }
 
 function onDeletePost(){
@@ -21,27 +27,8 @@ function onCloseDeleteClicked() {
   document.getElementById('deletePost').style.display='none';
 }
 
-function removeElement(btnstate) {
-  var divs= document.getElementById('post1');
-  divs.parentNode.removeChild(divs);
-}
 
 function removeElement(btnstate) {
-  var divs= document.getElementById('post2');
-  divs.parentNode.removeChild(divs);
-}
-
-function removeElement(btnstate) {
-  var divs= document.getElementById('post3');
-  divs.parentNode.removeChild(divs);
-}
-
-function removeElement(btnstate) {
-  var divs= document.getElementById('post4');
-  divs.parentNode.removeChild(divs);
-}
-
-function removeElement(btnstate) {
-  var divs= document.getElementById('post5');
+  var divs= document.getElementsByClassName('container')[0];
   divs.parentNode.removeChild(divs);
 }
