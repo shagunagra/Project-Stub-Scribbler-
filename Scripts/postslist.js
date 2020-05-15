@@ -18,7 +18,9 @@ window.onclick = function(event) {
 
 }
 
-function onDeletePost(){
+
+function onDeletePost(postid){
+  deleteid=postid;
   document.getElementById('deletePost').style.display='block';
 }
 
@@ -28,7 +30,6 @@ function onCloseDeleteClicked() {
 }
 
 
-function removeElement(btnstate) {
-  var divs= document.getElementsByClassName('container')[0];
-  divs.parentNode.removeChild(divs);
+function removeElement(a) {
+  document.getElementById(deleteid).style.display='none';
 }
