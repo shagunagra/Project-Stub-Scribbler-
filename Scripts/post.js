@@ -36,6 +36,7 @@ function thu(){
     n.style.backgroundColor="white";
     n.style.margin="10px 10px 10px 10px";
     n.style.padding="0 20px 20px 10px";
+    n.style.wordBreak="break-word";
     var textnode = document.createTextNode(comment);
     n.appendChild(textnode);
     if (comment===""){
